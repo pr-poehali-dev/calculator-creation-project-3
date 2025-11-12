@@ -12,43 +12,24 @@ const EmbedCode = () => {
 
   const codes = [
     {
-      id: 'fullscreen',
-      title: 'Полноэкранный',
-      description: 'Рекомендуется для отдельной страницы',
+      id: 'tilda',
+      title: 'Для Tilda (рекомендуется)',
+      description: 'Готовый код для блока T123',
+      code: `<iframe src="${embedUrl}" width="100%" height="1000" frameborder="0" scrolling="no"></iframe>`
+    },
+    {
+      id: 'tilda-responsive',
+      title: 'Адаптивный для Tilda',
+      description: 'Подстраивается под размер экрана',
       code: `<div style="position: relative; width: 100%; padding-bottom: 120%; min-height: 800px;">
-  <iframe 
-    src="${embedUrl}" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    loading="lazy">
-  </iframe>
+  <iframe src="${embedUrl}" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" frameborder="0"></iframe>
 </div>`
     },
     {
-      id: 'compact',
-      title: 'Компактный',
-      description: 'Для врезки в контент страницы',
-      code: `<div style="position: relative; width: 100%; max-width: 700px; margin: 0 auto; padding-bottom: 100%; min-height: 700px;">
-  <iframe 
-    src="${embedUrl}" 
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    loading="lazy">
-  </iframe>
-</div>`
-    },
-    {
-      id: 'fixed',
-      title: 'Фиксированная высота',
-      description: 'Для десктопных сайтов',
-      code: `<div style="position: relative; width: 100%; height: 900px;">
-  <iframe 
-    src="${embedUrl}" 
-    style="width: 100%; height: 100%; border: none; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.15);"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    loading="lazy">
-  </iframe>
-</div>`
+      id: 'simple',
+      title: 'Простой код',
+      description: 'Для любого сайта',
+      code: `<iframe src="${embedUrl}" width="100%" height="1000" frameborder="0"></iframe>`
     }
   ];
 
@@ -67,10 +48,10 @@ const EmbedCode = () => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8 sm:mb-12 animate-fade-in">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 sm:mb-4">
-            Код для установки калькулятора
+            Код для Tilda
           </h1>
           <p className="text-base sm:text-lg text-blue-100 max-w-2xl mx-auto">
-            Выберите подходящий вариант и скопируйте код для вставки на ваш сайт
+            Скопируйте код и вставьте в блок T123 на вашем сайте
           </p>
         </div>
 
