@@ -20,7 +20,15 @@ const LoanCalculator = () => {
   const formattedDate = returnDate.toLocaleDateString('ru-RU');
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-3 sm:p-4 md:p-6 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-700">
+    <div className="min-h-screen flex items-center justify-center p-3 sm:p-4 md:p-6 bg-gradient-to-br from-blue-600 via-purple-600 to-blue-700 relative">
+      <a 
+        href="/embed" 
+        className="absolute top-4 right-4 bg-white/90 backdrop-blur hover:bg-white px-4 py-2 rounded-full text-sm font-medium text-gray-800 hover:text-blue-600 transition-all shadow-lg hover:shadow-xl flex items-center gap-2"
+      >
+        <Icon name="Code" size={18} />
+        <span className="hidden sm:inline">Получить код</span>
+        <span className="sm:hidden">Код</span>
+      </a>
       <div className="w-full max-w-xl lg:max-w-2xl">
         <div className="bg-white rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl animate-scale-in">
           <div className="space-y-6 sm:space-y-7 md:space-y-8">
