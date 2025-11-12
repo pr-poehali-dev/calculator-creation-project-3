@@ -80,17 +80,24 @@ const LoanCalculator = () => {
               </div>
             </div>
 
-            <Button 
-              size="lg"
-              className="w-full h-14 sm:h-16 md:h-[4.5rem] text-lg sm:text-xl md:text-2xl font-semibold rounded-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-300 text-white active:scale-95 touch-manipulation"
+            <a 
+              href="https://www.money-financei.ru/theapplicationisoffline" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
             >
-              <div className="flex items-center justify-center gap-2 sm:gap-3">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-green-400 to-lime-400 flex items-center justify-center flex-shrink-0">
-                  <Icon name="ArrowRight" size={20} className="text-white sm:w-6 sm:h-6" />
+              <Button 
+                size="lg"
+                className="w-full h-14 sm:h-16 md:h-[4.5rem] text-lg sm:text-xl md:text-2xl font-semibold rounded-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transition-all duration-300 text-white active:scale-95 touch-manipulation"
+              >
+                <div className="flex items-center justify-center gap-2 sm:gap-3">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-green-400 to-lime-400 flex items-center justify-center flex-shrink-0">
+                    <Icon name="ArrowRight" size={20} className="text-white sm:w-6 sm:h-6" />
+                  </div>
+                  <span>Получить деньги</span>
                 </div>
-                <span>Получить деньги</span>
-              </div>
-            </Button>
+              </Button>
+            </a>
 
             <div className="flex items-center justify-center gap-2 text-gray-500 pt-2">
               <Icon name="Shield" size={18} className="text-blue-600 flex-shrink-0" />
